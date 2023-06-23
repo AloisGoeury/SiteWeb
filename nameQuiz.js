@@ -22,11 +22,14 @@ function generateImage(persos,Size){
 
     sectionImage.appendChild(element);
     element.appendChild(image);
+    let Answer = ''
+
+
 
     if (perso.nom === ''){
-        const Answer = `${perso.prenom}`;
+        Answer = `${perso.prenom}`;
     } else {
-        const Answer = `${perso.prenom} ${perso.nom}`;
+        Answer = `${perso.prenom} ${perso.nom}`;
     }
 
 
