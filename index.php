@@ -4,6 +4,7 @@
 
 $username = $_SESSION['username'];
 
+
 // Connexion à la base de données
 $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -13,6 +14,7 @@ $stmt = $conn->prepare("SELECT * FROM utilisateurs WHERE username = :username");
 $stmt->bindParam(':username', $username);
 $stmt->execute();
 $user = $stmt->fetch();
+
 
 // Vérifier si l'utilisateur existe dans la base de données
 if (!$user) {
@@ -28,14 +30,28 @@ if (!$user) {
 </head>
 <body>
 
-<p>Mes points : <?= $user['points']; ?> </p>
+<h1>
+    Bonjour 
+    <?php 
+    echo "$username. ";
+    $utilisateurId = $_SESSION['id'];
+    $stmt2 = $conn->prepare("SELECT MAX(score) FROM parties WHERE utilisateur_id = :utilisateurId");
+    $stmt2->bindParam(':utilisateurId', $utilisateurId);
+    $stmt2->execute();
+    $result = $stmt2->fetch();
+    if ($result && isset($result[0])) {
+        $maxScore = $result[0];
+        echo "Votre meilleur score est : $maxScore";
+    } else {
+        echo "Aucun score trouvé ! Vous êtes nouveau ? Jouez !";
+    }
+    ?>    
+</h1>
 
     
-
-<h1>coucou</h1>
 <a href="login.php">CONNEXION</a>
 
-<a href="./siteweb/jeu.php">JOUER AU JEU</a>
+<a href="jeu.php">JOUER AU JEU</a>
 
 </body>
 </html>

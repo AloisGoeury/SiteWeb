@@ -46,79 +46,80 @@ function showTheAnswer(GoodResponse){
 }
 
 function verifierReponse() {
-    if (isAnswered) {
-      return; 
-    }
-  
-    const reponseDonnee = inputReponse.value;
-    if (reponseDonnee === GoodAnswer) {
-      guesses += 1;
-      if (essai === 0) {
-        point += 2;
-      } else if (essai === 1) {
-        point += 1;
-      }
-      essai = 0;
-      console.log(`Félicitations, vous avez maintenant ${point} points`);
-      const ParagrapheAffichageScore = document.querySelector(".AffichageScore");
-      ParagrapheAffichageScore.textContent = `Votre de score est de ${point}`
-      isAnswered = true;
-        inputReponse.style.display = 'none';
-        boutonValider.style.display = 'none';
-        BoutonTuTriches.style.display = 'none';
-
-
-        const sectionReponse = document.querySelector(".Reponse");
-        const resultMessage = document.createElement("p");
-        resultMessage.textContent = `Félicitations, c'était bien "${GoodAnswer}" !`;
-        sectionReponse.style.display = 'block';
-        sectionReponse.appendChild(resultMessage);
-        nextPersonButton.style.display = 'block'
-   
-      if (guesses === 10) {
-
-        // Envoi du score au serveur via une requête AJAX
-        const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'enregistrer_score.php');
-        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.onreadystatechange = function() {
-          if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-              // Traitement de la réponse du serveur (par exemple, affichage d'un message à l'utilisateur)
-              const response = xhr.responseText;
-              console.log(response);
-            } else {
-              console.error('Une erreur s\'est produite lors de l\'envoi du score.');
-            }
-          }
-        };
-        xhr.send('score=' + point);
-
-
-        console.log(`Score final : ${point}`);
-        const replay = confirm(`Score final : ${point}\nVous avez terminé le jeu ! Voulez-vous rejouer ?`);
-        if (replay) {
-          point = 0;
-          guesses = 0;
-          document.querySelector(".Reponse").innerHTML = "";
-          document.querySelector(".Image").innerHTML = "";
-          ListResult = generateImage(persos, Size);
-          GoodAnswer = ListResult[0]
-          perso = ListResult[1]
-        }
-      }
-    } else {
-      if (!isAnswered) {
-        essai += 1;
-        const sectionReponse = document.querySelector(".Reponse");
-        const resultMessage = document.createElement("p");
-        sectionReponse.style.display = 'block';
-        resultMessage.textContent = `Faux! Ce n'est pas "${inputReponse.value}" !`;
-        sectionReponse.appendChild(resultMessage);
-      }
-    }
-    inputReponse.value = '';
+  if (isAnswered) {
+    return; 
   }
+
+  const reponseDonnee = inputReponse.value;
+  if (reponseDonnee === GoodAnswer) {
+    guesses += 1;
+    if (essai === 0) {
+      point += 2;
+    } else if (essai === 1) {
+      point += 1;
+    }
+    essai = 0;
+    console.log(`Félicitations, vous avez maintenant ${point} points`);
+    const ParagrapheAffichageScore = document.querySelector(".AffichageScore");
+    ParagrapheAffichageScore.textContent = `Votre de score est de ${point}`
+    isAnswered = true;
+    inputReponse.style.display = 'none';
+    boutonValider.style.display = 'none';
+    BoutonTuTriches.style.display = 'none';
+
+    const sectionReponse = document.querySelector(".Reponse");
+    const resultMessage = document.createElement("p");
+    resultMessage.textContent = `Félicitations, c'était bien "${GoodAnswer}" !`;
+    sectionReponse.style.display = 'block';
+    sectionReponse.appendChild(resultMessage);
+    nextPersonButton.style.display = 'block';
+
+    if (guesses === 10) {
+      // Envoi du score au serveur via une requête AJAX
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', 'enregistrer_score.php');
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            // Traitement de la réponse du serveur (par exemple, affichage d'un message à l'utilisateur)
+            const response = xhr.responseText;
+            console.log(response);
+          } else {
+            console.error('Une erreur s\'est produite lors de l\'envoi du score.');
+          }
+        }
+      };
+      xhr.send('score=' + point);
+
+      console.log(`Score final : ${point}`);
+      const replay = confirm(`Score final : ${point}\nVous avez terminé le jeu ! Voulez-vous rejouer ?`);
+      if (replay) {
+        point = 0;
+        guesses = 0;
+        //document.querySelector(".Reponse").innerHTML = "";
+        //document.querySelector(".Image").innerHTML = "";
+        //ListResult = generateImage(persos, Size);
+        //GoodAnswer = ListResult[0];
+        //perso = ListResult[1];
+        location.reload();
+      } else {
+        window.location.href = "index.php";
+      }
+    }
+  } else {
+    if (!isAnswered) {
+      essai += 1;
+      const sectionReponse = document.querySelector(".Reponse");
+      const resultMessage = document.createElement("p");
+      sectionReponse.style.display = 'block';
+      resultMessage.textContent = `Faux! Ce n'est pas "${inputReponse.value}" !`;
+      sectionReponse.appendChild(resultMessage);
+    }
+  }
+  inputReponse.value = '';
+}
+
   
 
 let ListResult = generateImage(persos,Size);
@@ -132,57 +133,60 @@ let guesses = 0;
 
 const BoutonTuTriches = document.querySelector('.showAnswer');
 BoutonTuTriches.addEventListener("click", function () {
-    if (!(shown === 0)) {
-        return;
-    }
-    showTheAnswer(GoodAnswer)
-    guesses += 1
-    isAnswered = true
-    shown += 1;
-    console.log(`Dommage, vous avez toujours ${point} points`);
-    const ParagrapheAffichageScore = document.querySelector(".AffichageScore");
-    ParagrapheAffichageScore.textContent = `Votre de score est de ${point}`
-    inputReponse.style.display = 'none';
-    boutonValider.style.display = 'none';
-    BoutonTuTriches.style.display = 'none';
+  if (!(shown === 0)) {
+    return;
+  }
 
-    const sectionReponse = document.querySelector(".Reponse");
-    const resultMessage = document.createElement("p");
-    resultMessage.textContent = `C'était "${GoodAnswer}" ! Revise tes classiques voyons...`;
-    sectionReponse.style.display = 'block';
-    sectionReponse.appendChild(resultMessage);
-    nextPersonButton.style.display = 'block'
-    if (guesses === 10) {
+  showTheAnswer(GoodAnswer);
+  guesses += 1;
+  isAnswered = true;
+  shown += 1;
+  console.log(`Dommage, vous avez toujours ${point} points`);
+  const ParagrapheAffichageScore = document.querySelector(".AffichageScore");
+  ParagrapheAffichageScore.textContent = `Votre de score est de ${point}`;
+  inputReponse.style.display = 'none';
+  boutonValider.style.display = 'none';
+  BoutonTuTriches.style.display = 'none';
 
-        // Envoi du score au serveur via une requête AJAX
-        const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'enregistrer_score.php');
-        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.onreadystatechange = function() {
-          if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-              // Traitement de la réponse du serveur (par exemple, affichage d'un message à l'utilisateur)
-              const response = xhr.responseText;
-              console.log(response);
-            } else {
-              console.error('Une erreur s\'est produite lors de l\'envoi du score.');
-            }
-          }
-        };
-        xhr.send('score=' + point);
+  const sectionReponse = document.querySelector(".Reponse");
+  const resultMessage = document.createElement("p");
+  resultMessage.textContent = `C'était "${GoodAnswer}" ! Revise tes classiques voyons...`;
+  sectionReponse.style.display = 'block';
+  sectionReponse.appendChild(resultMessage);
+  nextPersonButton.style.display = 'block';
 
-
-        console.log(`Score final : ${point}`);
-        const replay = confirm(`Score final : ${point}\nVous avez terminé le jeu ! Voulez-vous rejouer ?`);
-        if (replay) {
-          point = 0;
-          guesses = 0;
-          ListResult = generateImage(persos, Size);
-          GoodAnswer = ListResult[0]
-          perso = ListResult[1]
+  if (guesses === 10) {
+    // Envoi du score au serveur via une requête AJAX
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'enregistrer_score.php');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+          // Traitement de la réponse du serveur (par exemple, affichage d'un message à l'utilisateur)
+          const response = xhr.responseText;
+          console.log(response);
+        } else {
+          console.error('Une erreur s\'est produite lors de l\'envoi du score.');
         }
       }
+    };
+    xhr.send('score=' + point);
+
+    console.log(`Score final : ${point}`);
+    const replay = confirm(`Score final : ${point}\nVous avez terminé le jeu ! Voulez-vous rejouer ?`);
+    if (replay) {
+      point = 0;
+      guesses = 0;
+      ListResult = generateImage(persos, Size);
+      GoodAnswer = ListResult[0];
+      perso = ListResult[1];
+    } else {
+      window.location.href = "index.php";
+    }
+  }
 });
+
 
 const inputReponse = document.getElementById('reponseDonnee');
 const boutonValider = document.querySelector('.sendAnswer');

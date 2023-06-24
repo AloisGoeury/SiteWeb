@@ -28,8 +28,10 @@ if (isset($_POST['submit'])) {
 
     // Vérifier le mot de passe
     if ($user && password_verify($password, $user['password'])) {
+        $userID = $user['id'];
         // Authentification réussie, créer une session
         $_SESSION['username'] = $username;
+        $_SESSION['id'] = $userID;
         header("Location: profil.php");
         exit();
     } else {
