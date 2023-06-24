@@ -76,6 +76,25 @@ function verifierReponse() {
         nextPersonButton.style.display = 'block'
    
       if (guesses === 10) {
+
+        // Envoi du score au serveur via une requête AJAX
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'enregistrer_score.php');
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+              // Traitement de la réponse du serveur (par exemple, affichage d'un message à l'utilisateur)
+              const response = xhr.responseText;
+              console.log(response);
+            } else {
+              console.error('Une erreur s\'est produite lors de l\'envoi du score.');
+            }
+          }
+        };
+        xhr.send('score=' + point);
+
+
         console.log(`Score final : ${point}`);
         const replay = confirm(`Score final : ${point}\nVous avez terminé le jeu ! Voulez-vous rejouer ?`);
         if (replay) {
@@ -93,6 +112,7 @@ function verifierReponse() {
         essai += 1;
         const sectionReponse = document.querySelector(".Reponse");
         const resultMessage = document.createElement("p");
+        sectionReponse.style.display = 'block';
         resultMessage.textContent = `Faux! Ce n'est pas "${inputReponse.value}" !`;
         sectionReponse.appendChild(resultMessage);
       }
@@ -133,6 +153,25 @@ BoutonTuTriches.addEventListener("click", function () {
     sectionReponse.appendChild(resultMessage);
     nextPersonButton.style.display = 'block'
     if (guesses === 10) {
+
+        // Envoi du score au serveur via une requête AJAX
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'enregistrer_score.php');
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+              // Traitement de la réponse du serveur (par exemple, affichage d'un message à l'utilisateur)
+              const response = xhr.responseText;
+              console.log(response);
+            } else {
+              console.error('Une erreur s\'est produite lors de l\'envoi du score.');
+            }
+          }
+        };
+        xhr.send('score=' + point);
+
+
         console.log(`Score final : ${point}`);
         const replay = confirm(`Score final : ${point}\nVous avez terminé le jeu ! Voulez-vous rejouer ?`);
         if (replay) {

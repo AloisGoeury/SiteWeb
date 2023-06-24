@@ -1,10 +1,11 @@
+<?php?>
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
 		<title>Bon anniversaire</title>
 		<script type="module" src="nameQuiz.js" defer></script>
- 
 	</head>
     <body>
         <header>
