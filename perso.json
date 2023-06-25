@@ -2,97 +2,113 @@
     {
         "nom": "Uzumaki",
         "prenom": "Naruto",
-        "Image": "Images/Naruto_Uzumaki.jpg"
+        "Image": "Images/Naruto_Uzumaki.jpg",
+        "difficulte" : "easy"
     },
 
     {
         "nom": "Uchiwa",
         "prenom": "Sasuke",
-        "Image": "Images/Sasuke_Uchiwa.jpg"
+        "Image": "Images/Sasuke_Uchiwa.jpg",
+        "difficulte" : "easy"
     },
 
     {
         "nom": "Haruno",
         "prenom": "Sakura",
-        "Image": "Images/Sakura_Haruno.jpg"
+        "Image": "Images/Sakura_Haruno.jpg",
+        "difficulte" : "easy"
     },
 
     {
         "nom": "Hatake",
         "prenom": "Kakashi",
-        "Image": "Images/Kakashi_Hatake.jpg"
+        "Image": "Images/Kakashi_Hatake.jpg",
+        "difficulte" : "easy"
     },
 
     {
         "nom": "",
         "prenom": "Yamato",
-        "Image": "Images/Yamato.jpg"
+        "Image": "Images/Yamato.jpg",
+        "difficulte" : "easy"
     },
 
     {
         "nom": "",
         "prenom": "Sai",
-        "Image": "Images/Sai.jpg"
+        "Image": "Images/Sai.jpg",
+        "difficulte" : "easy"
     },
 
     {
         "nom": "Yuhi",
         "prenom": "Kurenai",
-        "Image": "Images/Kurenai_Yuhi.jpg"
+        "Image": "Images/Kurenai_Yuhi.jpg",
+        "difficulte" : "medium"
     },
 
     {
         "nom": "Hyuga",
         "prenom": "Hinata",
-        "Image": "Images/Hinata_Hyuga.jpg"
+        "Image": "Images/Hinata_Hyuga.jpg",
+        "difficulte" : "easy"
     },
 
     {
         "nom": "Inuzuka",
         "prenom": "Kiba",
-        "Image": "Images/Kiba_Inuzuka.jpg"
+        "Image": "Images/Kiba_Inuzuka.jpg",
+        "difficulte" : "easy"
     },
 
     {
         "nom": "",
         "prenom": "Akamaru",
-        "Image": "Images/Akamaru.jpg"
+        "Image": "Images/Akamaru.jpg",
+        "difficulte" : "easy"
     },
 
     {
         "nom": "Aburame",
         "prenom": "Shino",
-        "Image": "Images/Shino_Aburame.jpg"
+        "Image": "Images/Shino_Aburame.jpg",
+        "difficulte" : "easy"
     },
 
     {
         "nom": "Sarutobi",
         "prenom": "Asuma",
-        "Image": "Images/Asuma_Sarutobi.jpg"
+        "Image": "Images/Asuma_Sarutobi.jpg",
+        "difficulte" : "easy"
     },
 
     {
         "nom": "Akimichi",
         "prenom": "Choji",
-        "Image": "Images/Choji_Akimichi.jpg"
+        "Image": "Images/Choji_Akimichi.jpg",
+        "difficulte" : "easy"
     },
 
     {
         "nom": "Yamanaka",
         "prenom": "Ino",
-        "Image": "Images/Ino_Yamanaka.jpg"
+        "Image": "Images/Ino_Yamanaka.jpg",
+        "difficulte" : "easy"
     },
 
     { 
         "nom": "Nara",
         "prenom": "Shikamaru",
-        "Image": "Images/Shikamaru_Nara.jpg"
+        "Image": "Images/Shikamaru_Nara.jpg",
+        "difficulte" : "easy"
     },
 
     {
         "nom": "Maito",
         "prenom": "Gai",
-        "Image": "Images/Gai_Maito.jpg"
+        "Image": "Images/Gai_Maito.jpg",
+        "difficulte" : "easy"
     }
     
 ]

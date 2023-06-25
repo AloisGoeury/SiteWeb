@@ -1,13 +1,24 @@
 const reponse = await fetch('perso.json');
 
-const persos = await reponse.json();
+let persos = await reponse.json();
 
 
-const Size = persos.length;
+
 
 const urlParams = new URLSearchParams(window.location.search);
 const difficulty = urlParams.get('difficulty');
 
+if (difficulty){
+  if(difficulty === 'easy'){
+    persos = persos.filter(item => item.difficulte === 'easy')
+  } else if(difficulty === 'medium'){
+    persos = persos.filter(item => item.difficulte === 'medium')
+  }else if(difficulty === 'hard'){
+    persos = persos.filter(item => item.difficulte === 'hard')
+  }
+}
+
+const Size = persos.length;
 console.log('Difficulté sélectionnée :', difficulty);
 
 let persoSelectionne = [];
