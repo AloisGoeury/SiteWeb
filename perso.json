@@ -3,112 +3,1841 @@
         "nom": "Uzumaki",
         "prenom": "Naruto",
         "Image": "Images/Naruto_Uzumaki.jpg",
-        "difficulte" : "easy"
+        "difficulte" : "easy",
+        "episodeDepart" : 1
     },
 
     {
         "nom": "Uchiwa",
         "prenom": "Sasuke",
         "Image": "Images/Sasuke_Uchiwa.jpg",
-        "difficulte" : "easy"
+        "difficulte" : "easy",
+        "episodeDepart" : 1
     },
 
     {
         "nom": "Haruno",
         "prenom": "Sakura",
         "Image": "Images/Sakura_Haruno.jpg",
-        "difficulte" : "easy"
+        "difficulte" : "easy",
+        "episodeDepart" : 1
     },
 
     {
         "nom": "Hatake",
         "prenom": "Kakashi",
         "Image": "Images/Kakashi_Hatake.jpg",
-        "difficulte" : "easy"
+        "difficulte" : "easy",
+        "episodeDepart" : 1
     },
 
     {
         "nom": "",
         "prenom": "Yamato",
         "Image": "Images/Yamato.jpg",
-        "difficulte" : "easy"
+        "difficulte" : "easy",
+        "episodeDepart" : 1
     },
 
     {
         "nom": "",
         "prenom": "Sai",
         "Image": "Images/Sai.jpg",
-        "difficulte" : "easy"
+        "difficulte" : "easy",
+        "episodeDepart" : 1
     },
 
     {
         "nom": "Yuhi",
         "prenom": "Kurenai",
         "Image": "Images/Kurenai_Yuhi.jpg",
-        "difficulte" : "medium"
+        "difficulte" : "medium",
+        "episodeDepart" : 1
     },
 
     {
         "nom": "Hyuga",
         "prenom": "Hinata",
         "Image": "Images/Hinata_Hyuga.jpg",
-        "difficulte" : "easy"
+        "difficulte" : "easy",
+        "episodeDepart" : 1
     },
 
     {
         "nom": "Inuzuka",
         "prenom": "Kiba",
         "Image": "Images/Kiba_Inuzuka.jpg",
-        "difficulte" : "easy"
+        "difficulte" : "easy",
+        "episodeDepart" : 1
     },
 
     {
         "nom": "",
         "prenom": "Akamaru",
         "Image": "Images/Akamaru.jpg",
-        "difficulte" : "easy"
+        "difficulte" : "easy",
+        "episodeDepart" : 1
     },
 
     {
         "nom": "Aburame",
         "prenom": "Shino",
         "Image": "Images/Shino_Aburame.jpg",
-        "difficulte" : "easy"
+        "difficulte" : "easy",
+        "episodeDepart" : 1
     },
 
     {
         "nom": "Sarutobi",
         "prenom": "Asuma",
         "Image": "Images/Asuma_Sarutobi.jpg",
-        "difficulte" : "easy"
+        "difficulte" : "easy",
+        "episodeDepart" : 1
     },
 
     {
         "nom": "Akimichi",
         "prenom": "Choji",
         "Image": "Images/Choji_Akimichi.jpg",
-        "difficulte" : "easy"
+        "difficulte" : "easy",
+        "episodeDepart" : 1
     },
 
     {
         "nom": "Yamanaka",
         "prenom": "Ino",
         "Image": "Images/Ino_Yamanaka.jpg",
-        "difficulte" : "easy"
+        "difficulte" : "easy",
+        "episodeDepart" : 1
     },
 
     { 
         "nom": "Nara",
         "prenom": "Shikamaru",
         "Image": "Images/Shikamaru_Nara.jpg",
-        "difficulte" : "easy"
+        "difficulte" : "easy",
+        "episodeDepart" : 1
     },
 
     {
         "nom": "Maito",
         "prenom": "Gai",
         "Image": "Images/Gai_Maito.jpg",
-        "difficulte" : "easy"
-    }
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Hyuga",
+        "prenom": "Neji",
+        "Image": "Images/Neji_Hyuga.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Lee",
+        "prenom": "Rock",
+        "Image": "Images/Rock_Lee.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Tenten",
+        "Image": "Images/Tenten.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Ebisu",
+        "Image": "Images/Ebisu.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Sarutobi",
+        "prenom": "Konohamaru",
+        "Image": "Images/Konohamaru_Sarutobi.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Kazamatsuri",
+        "prenom": "Moegi",
+        "Image": "Images/Moegi_Kazamatsuri.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Ise",
+        "prenom": "Udon",
+        "Image": "Images/Udon_Ise.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Shiranui",
+        "prenom": "Genma",
+        "Image": "Images/Genma_Shiranui.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Tatami",
+        "prenom": "Iwashi",
+        "Image": "Images/Iwashi_Tatami.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Namiashi",
+        "prenom": "Raido",
+        "Image": "Images/Raiso_Namiashi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Shizune",
+        "Image": "Images/Shizune.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Senju",
+        "prenom": "Hashirama",
+        "Image": "Images/Hashirama_Senju.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Senju",
+        "prenom": "Tobirama",
+        "Image": "Images/Tobirama_Senju.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Sarutobi",
+        "prenom": "Hiruzen",
+        "Image": "Images/Hiruzen_Sarutobi.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Mitokado",
+        "prenom": "Homura",
+        "Image": "Images/Homura_Mitokado.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Utatane",
+        "prenom": "Koharu",
+        "Image": "Images/Koharu_Utatane.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Jiraya",
+        "Image": "Images/Jiraya.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Orochimaru",
+        "Image": "Images/Orochimaru.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Tsunade",
+        "Image": "Images/Tsunade.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Namikaze",
+        "prenom": "Minato",
+        "Image": "Images/Minato_Namikaze.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Uchiwa",
+        "prenom": "Obito",
+        "Image": "Images/Obito_Uchiwa.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 119
+    },
+
+    {
+        "nom": "Nohara",
+        "prenom": "Rin",
+        "Image": "Images/Nohara_Rin.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 119
+    },
+
+    {
+        "nom": "",
+        "prenom": "Ayame",
+        "Image": "Images/Ayame.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Shijimi",
+        "Image": "Images/Shijimi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Teuchi",
+        "Image": "Images/Teuchi.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Shimura",
+        "prenom": "Danzo",
+        "Image": "Images/Danzo_Shimura.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 32
+    },
+
+    {
+        "nom": "",
+        "prenom": "Ami",
+        "Image": "Images/Ami.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Hyuga",
+        "prenom": "Hanabi",
+        "Image": "Images/Hanabi_Hyuga.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Akado",
+        "prenom": "Manabu",
+        "Image": "Images/Manabu_Akado.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Nawaki",
+        "Image": "Images/Nawaki.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Tsubaki",
+        "Image": "Images/Tsubaki.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Umino",
+        "prenom": "Iruka",
+        "Image": "Images/Iruka_Umino.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Kamizuki",
+        "prenom": "Izumo",
+        "Image": "Images/Izumo_Kamizuki.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Hagane",
+        "prenom": "Kotetsu",
+        "Image": "Images/Kotetsu_Hagane.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Mizuki",
+        "Image": "Images/Mizuki.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Tobitake",
+        "prenom": "Tonbo",
+        "Image": "Images/Tonbo_Tobitake.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Mitarashi",
+        "prenom": "Anko",
+        "Image": "Images/Anko_Mitarashi.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Yamashiro",
+        "prenom": "Aoba",
+        "Image": "Images/Aoba_Yamashiro.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
     
+    {
+        "nom": "Gekko",
+        "prenom": "Hayate",
+        "Image": "Images/Hayate_Gekko.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Morino",
+        "prenom": "Ibiki",
+        "Image": "Images/Ibiki_Morino.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Akimichi",
+        "prenom": "Choza",
+        "Image": "Images/Choza_Akimichi.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Uchiwa",
+        "prenom": "Fugaku",
+        "Image": "Images/Fugaku_Uchiwa.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Hyuga",
+        "prenom": "Hiashi",
+        "Image": "Images/Hiashi_Hyuga.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Hyuga",
+        "prenom": "Hizashi",
+        "Image": "Images/Hizashi_Hyuga.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Yamanaka",
+        "prenom": "Inoichi",
+        "Image": "Images/Inoichi_Yamanaka.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Hatake",
+        "prenom": "Sakumo",
+        "Image": "Images/Sakumo_Hatake.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 159
+    },
+
+    {
+        "nom": "Aburame",
+        "prenom": "Shibi",
+        "Image": "Images/Shibi_Aburame.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Nara",
+        "prenom": "Shikaku",
+        "Image": "Images/Shikaku_Nara.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Yamanaka",
+        "prenom": "Fu",
+        "Image": "Images/Fu_Yamanaka.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 198
+    },
+
+    {
+        "nom": "Aburame",
+        "prenom": "Torune",
+        "Image": "Images/Torune_Aburame.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 198
+    },
+
+    {
+        "nom": "Uzuki",
+        "prenom": "Yugao",
+        "Image": "Images/Yugao_Uzuki.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Uchiwa",
+        "prenom": "Itachi",
+        "Image": "Images/Itachi_Uchiwa.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Yakushi",
+        "prenom": "Kabuto",
+        "Image": "Images/Kabuto_Yakushi.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Uchiwa",
+        "prenom": "Madara",
+        "Image": "Images/Madara_Uchiwa.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 130
+    },
+
+    {
+        "nom": "Rokusho",
+        "prenom": "Aoi",
+        "Image": "Images/Aoi_Rokusho.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Morino",
+        "prenom": "Idate",
+        "Image": "Images/Idate_Morino.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Ao",
+        "Image": "Images/Ao.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 199
+    },
+
+    {
+        "nom": "",
+        "prenom": "Chojuro",
+        "Image": "Images/Chojuro.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 199
+    },
+
+    {
+        "nom": "",
+        "prenom": "Chukichi",
+        "Image": "Images/Chukichi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 261
+    },
+
+    {
+        "nom": "",
+        "prenom": "Harusame",
+        "Image": "Images/Harusame.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 145
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kiri",
+        "Image": "Images/Kiri.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 242
+    },
+
+    {
+        "nom": "",
+        "prenom": "Tsurugi",
+        "Image": "Images/Tsurugi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 147
+    },
+
+    {
+        "nom": "",
+        "prenom": "Byakuren",
+        "Image": "Images/Byakuren.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 369
+    },
+
+    {
+        "nom": "Hozuki",
+        "prenom": "Gengetsu",
+        "Image": "Images/Gengetsu_Hozuki.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 267
+    },
+
+    {
+        "nom": "Karatachi",
+        "prenom": "Yagura",
+        "Image": "Images/Yagura_Karatachi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 200
+    },
+
+    {
+        "nom": "Terumi",
+        "prenom": "Mei",
+        "Image": "Images/Mei_Terumi.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 199
+    },
+
+    {
+        "nom": "",
+        "prenom": "Gozu",
+        "Image": "Images/Gozu.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Haku",
+        "Image": "Images/Haku.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Hoshigaki",
+        "prenom": "Kisame",
+        "Image": "Images/Kisame_Hoshigaki.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Meizu",
+        "Image": "Images/Meizu.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Hozuki",
+        "prenom": "Suigetsu",
+        "Image": "Images/Suigetsu_Hozuki.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 115
+    },
+
+    {
+        "nom": "",
+        "prenom": "Utakata",
+        "Image": "Images/Utakata.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 144
+    },
+
+    {
+        "nom": "Momochi",
+        "prenom": "Zabuza",
+        "Image": "Images/Zabuza_Momochi.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Kurosuki",
+        "prenom": "Raiga",
+        "Image": "Images/Raiga_Kurosuki.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Ranmaru",
+        "Image": "Images/Ranmaru.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Karui",
+        "Image": "Images/Karui.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 156
+    },
+
+    {
+        "nom": "",
+        "prenom": "Omoi",
+        "Image": "Images/Omoi.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 156
+    },
+
+    {
+        "nom": "",
+        "prenom": "Samui",
+        "Image": "Images/Samui.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 156
+    },
+
+    {
+        "nom": "",
+        "prenom": "Atsui",
+        "Image": "Images/Atsui.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 269
+    },
+
+    {
+        "nom": "",
+        "prenom": "C",
+        "Image": "Images/C.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 199
+    },
+
+    {
+        "nom": "",
+        "prenom": "Darui",
+        "Image": "Images/Darui.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 199
+    },
+
+    {
+        "nom": "",
+        "prenom": "Dodai",
+        "Image": "Images/Dodai.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 282
+    },
+
+    {
+        "nom": "",
+        "prenom": "F",
+        "Image": "Images/F.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 296
+    },
+
+    {
+        "nom": "",
+        "prenom": "J",
+        "Image": "Images/J.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 143
+    },
+
+    {
+        "nom": "",
+        "prenom": "K",
+        "Image": "Images/K.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 143
+    },
+
+    {
+        "nom": "",
+        "prenom": "Tango",
+        "Image": "Images/Tango.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 261
+    },
+
+    {
+        "nom": "",
+        "prenom": "Blue B",
+        "Image": "Images/Blue_B.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 244
+    },
+
+    {
+        "nom": "",
+        "prenom": "Killer B",
+        "Image": "Images/Killer_B.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 142
+    },
+
+    {
+        "nom": "",
+        "prenom": "C",
+        "Image": "Images/C.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 199
+    },
+
+    {
+        "nom": "Nii",
+        "prenom": "Yugito",
+        "Image": "Images/Yugito_Nii.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 72
+    },
+
+    {
+        "nom": "",
+        "prenom": "A",
+        "Image": "Images/A1.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 369
+    },
+
+    {
+        "nom": "",
+        "prenom": "A",
+        "Image": "Images/A2.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 269
+    },
+
+    {
+        "nom": "",
+        "prenom": "A",
+        "Image": "Images/A3.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 244
+    },
+
+    {
+        "nom": "",
+        "prenom": "A",
+        "Image": "Images/A4.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 152
+    },
+
+    {
+        "nom": "",
+        "prenom": "A",
+        "Image": "Images/A1.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 369
+    },
+
+    {
+        "nom": "",
+        "prenom": "Ginkaku",
+        "Image": "Images/A1.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 267
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kinkaku",
+        "Image": "Images/Kinkaku.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 267
+    },
+
+    {
+        "nom": "",
+        "prenom": "A",
+        "Image": "Images/A1.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 369
+    },
+
+    {
+        "nom": "",
+        "prenom": "Agari",
+        "Image": "Images/Agari.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Ageha",
+        "Image": "Images/Ageha.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Gato",
+        "Image": "Images/Gato.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Giichi",
+        "Image": "Images/Giichi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Inari",
+        "Image": "Images/Inari.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kaiza",
+        "Image": "Images/Kaiza.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kaji",
+        "Image": "Images/Kaji.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Tazuna",
+        "Image": "Images/Tazuna.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Tsunami",
+        "Image": "Images/Tsunami.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Waraji",
+        "Image": "Images/Waraji.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Zori",
+        "Image": "Images/Zori.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Jugo",
+        "Image": "Images/Jugo.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 116
+    },
+
+    {
+        "nom": "",
+        "prenom": "Karin",
+        "Image": "Images/Karin.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 115
+    },
+
+    {
+        "nom": "Kinuta",
+        "prenom": "Dosu",
+        "Image": "Images/Dosu_Kinuta.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Tsuchi",
+        "prenom": "Kin",
+        "Image": "Images/Kin_Tsuchi.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Tsurugi",
+        "prenom": "Misumi",
+        "Image": "Images/Misumi_Tsurugi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Akado",
+        "prenom": "Yoroi",
+        "Image": "Images/Yoroi_Akado.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Abumi",
+        "prenom": "Zaku",
+        "Image": "Images/Zaku_Abumi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Jirobo",
+        "Image": "Images/Jirobo.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kidomaru",
+        "Image": "Images/Kidomaru.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kimimaro",
+        "Image": "Images/Kimimaro.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Ukon",
+        "prenom": "Sakon",
+        "Image": "Images/Sakon_Ukon.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Tayuya",
+        "Image": "Images/Tayuya.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Arashi",
+        "Image": "Images/Arashi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Hanzaki",
+        "Image": "Images/Hanzaki.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Jigumo",
+        "Image": "Images/Jigumo.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kagero",
+        "Image": "Images/Kagero.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kamikiri",
+        "Image": "Images/Kamikiri.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kotohime",
+        "Image": "Images/Kotohime.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Sasame",
+        "Image": "Images/Sasame.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Gozu",
+        "Image": "Images/Gozu2.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 91
+    },
+
+    {
+        "nom": "",
+        "prenom": "Guren",
+        "Image": "Images/Guren.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 89
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kigiri",
+        "Image": "Images/Kigiri.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 91
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kiho",
+        "Image": "Images/Kiho.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 91
+    },
+
+    {
+        "nom": "",
+        "prenom": "Nurari",
+        "Image": "Images/Nurari.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 91
+    },
+
+    {
+        "nom": "",
+        "prenom": "Rinji",
+        "Image": "Images/Rinji.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 91
+    },
+
+    {
+        "nom": "",
+        "prenom": "Baki",
+        "Image": "Images/Baki.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Gaara",
+        "Image": "Images/Gaara.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kankuro",
+        "Image": "Images/Kankuro.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Temari",
+        "Image": "Images/Temari.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Matsuri",
+        "Image": "Images/Matsuri.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Sari",
+        "Image": "Images/Sari.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 31
+    },
+
+    {
+        "nom": "",
+        "prenom": "Isago",
+        "Image": "Images/Isago.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 7
+    },
+
+    {
+        "nom": "",
+        "prenom": "Reto",
+        "Image": "Images/Reto.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 369
+    },
+
+    {
+        "nom": "",
+        "prenom": "Shamon",
+        "Image": "Images/Shamon.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 382
+    },
+
+    {
+        "nom": "",
+        "prenom": "Rasa",
+        "Image": "Images/Rasa.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Chiyo",
+        "Image": "Images/Chiyo.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 9
+    },
+
+    {
+        "nom": "",
+        "prenom": "Ebizo",
+        "Image": "Images/Ebizo.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 9
+    },
+
+    {
+        "nom": "",
+        "prenom": "Mukade",
+        "Image": "Images/Mukade.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 15
+    },
+
+    {
+        "nom": "",
+        "prenom": "Sasori",
+        "Image": "Images/Sasori.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 2
+    },
+
+    {
+        "nom": "",
+        "prenom": "Yura",
+        "Image": "Images/Yura.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 2
+    },
+
+    {
+        "nom": "",
+        "prenom": "Akatsuchi",
+        "Image": "Images/Akatsuchi.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 199
+    },
+
+    {
+        "nom": "",
+        "prenom": "Gari",
+        "Image": "Images/Gari.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 256
+    },
+
+    {
+        "nom": "",
+        "prenom": "Ittan",
+        "Image": "Images/Ittan.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 256
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kakko",
+        "Image": "Images/Kakko.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 119
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kitsuchi",
+        "Image": "Images/Kitsuchi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 256
+    },
+
+    {
+        "nom": "",
+        "prenom": "Mahiru",
+        "Image": "Images/Mahiru.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 119
+    },
+
+    {
+        "nom": "Azuma",
+        "prenom": "Shibito",
+        "Image": "Images/Shibito_Azuma.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 120
+    },
+
+    {
+        "nom": "",
+        "prenom": "Sumashi",
+        "Image": "Images/Sumashi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 120
+    },
+
+    {
+        "nom": "",
+        "prenom": "Taiseki",
+        "Image": "Images/Taiseki.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 119
+    },
+
+    {
+        "nom": "",
+        "prenom": "Roshi",
+        "Image": "Images/Roshi.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 121
+    },
+
+    {
+        "nom": "",
+        "prenom": "Ishikawa",
+        "Image": "Images/Ishikawa.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 332
+    },
+
+    {
+        "nom": "",
+        "prenom": "Han",
+        "Image": "Images/Han.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 205
+    },
+
+    {
+        "nom": "",
+        "prenom": "Mu",
+        "Image": "Images/Mu.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 266
+    },
+
+    {
+        "nom": "",
+        "prenom": "Onoki",
+        "Image": "Images/Onoki.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 199
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kurotsuchi",
+        "Image": "Images/Kurotsuchi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 199
+    },
+
+    {
+        "nom": "",
+        "prenom": "Deidara",
+        "Image": "Images/Deidara.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 2
+    },
+
+    {
+        "nom": "",
+        "prenom": "Jibachi",
+        "Image": "Images/Jibachi.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kurobachi",
+        "Image": "Images/Kurobachi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Suzumebachi",
+        "Image": "Images/Suzumebachi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Baiu",
+        "Image": "Images/Baiu.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Hanzo",
+        "Image": "Images/Hanzo.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 128
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kagari",
+        "Image": "Images/Kagari.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Konan",
+        "Image": "Images/Konan.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 125
+    },
+
+    {
+        "nom": "",
+        "prenom": "Midare",
+        "Image": "Images/Midare.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Mubi",
+        "Image": "Images/Mubi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Nagato",
+        "Image": "Images/Nagato.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 128
+    },
+
+    {
+        "nom": "",
+        "prenom": "Oboro",
+        "Image": "Images/Oboro.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Shigure",
+        "Image": "Images/Shigure.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Yahiko",
+        "Image": "Images/Yahiko.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 128
+    },
+
+    {
+        "nom": "Hikyakuya",
+        "prenom": "Fukusuke",
+        "Image": "Images/Fukusuke_Hikyakuya.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Wasabi",
+        "prenom": "Jirocho",
+        "Image": "Images/Jirocho_Wasabi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kandachi",
+        "Image": "Images/Kandachi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 187
+    },
+
+    {
+        "nom": "",
+        "prenom": "Karashi",
+        "Image": "Images/Karashi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Rokusuke",
+        "Image": "Images/Rokusuke.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Sansho",
+        "Image": "Images/Sansho.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Shiore",
+        "Image": "Images/Shiore.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+    {
+        "nom": "",
+        "prenom": "Fu",
+        "Image": "Images/Fu.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 205
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kakuzu",
+        "Image": "Images/Kakuzu.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 71
+    },
+
+    {
+        "nom": "",
+        "prenom": "Hidan",
+        "Image": "Images/Hidan.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 71
+    },
+
+    {
+        "nom": "",
+        "prenom": "Hokuto",
+        "Image": "Images/Hokuto.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Mizura",
+        "Image": "Images/Mizura.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Sumaru",
+        "Image": "Images/Sumaru.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Hotarubi",
+        "Image": "Images/Hotarubi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Natsuhi",
+        "Image": "Images/Natsuhi.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Shiso",
+        "Image": "Images/Shiso.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Yotaka",
+        "Image": "Images/Yotaka.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "Uzumaki",
+        "prenom": "Ashina",
+        "Image": "Images/Ashina_Uzumaki.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 247
+    },
+
+    {
+        "nom": "Uzumaki",
+        "prenom": "Kushina",
+        "Image": "Images/Kushina_Uzumaki.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 128
+    },
+
+    {
+        "nom": "Uzumaki",
+        "prenom": "Mito",
+        "Image": "Images/Mito_Uzumaki.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 247
+    },
+
+    {
+        "nom": "",
+        "prenom": "Mifune",
+        "Image": "Images/Mifune.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 199
+    },
+
+    {
+        "nom": "",
+        "prenom": "Okiuke",
+        "Image": "Images/Okisuke.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 199
+    },
+
+    {
+        "nom": "",
+        "prenom": "Tatewaki",
+        "Image": "Images/Tatewaki.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 309
+    },
+
+    {
+        "nom": "",
+        "prenom": "Urakaku",
+        "Image": "Images/Urakaku.jpg",
+        "difficulte" : "hard",
+        "episodeDepart" : 199
+    },
+
+    {
+        "nom": "",
+        "prenom": "Tobi",
+        "Image": "Images/Tobi.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 32
+    },
+
+    {
+        "nom": "",
+        "prenom": "Zetsu",
+        "Image": "Images/Zetsu.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Shukaku",
+        "Image": "Images/Shukaku.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Matatabi",
+        "Image": "Images/Matatabi.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 72
+    },
+
+    {
+        "nom": "",
+        "prenom": "Isobu",
+        "Image": "Images/Isobu.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 92
+    },
+
+    {
+        "nom": "",
+        "prenom": "Son Goku",
+        "Image": "Images/Son_Goku.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 165
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kokuo",
+        "Image": "Images/Kokuo.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 165
+    },
+
+    {
+        "nom": "",
+        "prenom": "Saiken",
+        "Image": "Images/Saiken.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 151
+    },
+
+    {
+        "nom": "",
+        "prenom": "Chomei",
+        "Image": "Images/Chomei.jpg",
+        "difficulte" : "medium",
+        "episodeDepart" : 165
+    },
+
+    {
+        "nom": "",
+        "prenom": "Gyuki",
+        "Image": "Images/Gyuki.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 143
+    },
+
+    {
+        "nom": "",
+        "prenom": "Kurama",
+        "Image": "Images/Kurama.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 1
+    },
+
+    {
+        "nom": "",
+        "prenom": "Jubi",
+        "Image": "Images/Jubi.jpg",
+        "difficulte" : "easy",
+        "episodeDepart" : 205
+    }
+
+
+
 ]
