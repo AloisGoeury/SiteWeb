@@ -5,9 +5,25 @@ const persos = await reponse.json();
 
 const Size = persos.length;
 
+const urlParams = new URLSearchParams(window.location.search);
+const difficulty = urlParams.get('difficulty');
+
+console.log('Difficulté sélectionnée :', difficulty);
+
+let persoSelectionne = [];
+
 
 function generateImage(persos,Size){
-    const whichOne = Math.floor(Math.random() * Size);
+    let whichOne = 0;
+    while (true) {
+      whichOne = Math.floor(Math.random() * Size);
+      
+      // Vérifie si le nombre généré n'est pas présent dans la liste
+      if (!persoSelectionne.includes(whichOne)) {
+        break;
+      }
+    }
+    persoSelectionne.push(whichOne);
 
     const perso = persos[whichOne];
 
@@ -36,7 +52,7 @@ function generateImage(persos,Size){
     const Tot = [Answer,perso];
     return(Tot)
 
-}
+} 
 
 function showTheAnswer(GoodResponse){
     const sectionImage = document.querySelector(".Image");
@@ -51,7 +67,7 @@ function verifierReponse() {
   }
 
   const reponseDonnee = inputReponse.value;
-  if (reponseDonnee === GoodAnswer) {
+  if (reponseDonnee.toLowerCase() === GoodAnswer.toLowerCase()) {
     guesses += 1;
     if (essai === 0) {
       point += 2;
@@ -108,14 +124,13 @@ function verifierReponse() {
       }
     }
   } else {
-    if (!isAnswered) {
       essai += 1;
       const sectionReponse = document.querySelector(".Reponse");
       const resultMessage = document.createElement("p");
       sectionReponse.style.display = 'block';
       resultMessage.textContent = `Faux! Ce n'est pas "${inputReponse.value}" !`;
       sectionReponse.appendChild(resultMessage);
-    }
+    
   }
   inputReponse.value = '';
 }
@@ -173,6 +188,7 @@ BoutonTuTriches.addEventListener("click", function () {
     };
     xhr.send('score=' + point);
 
+  
     console.log(`Score final : ${point}`);
     const replay = confirm(`Score final : ${point}\nVous avez terminé le jeu ! Voulez-vous rejouer ?`);
     if (replay) {

@@ -38,7 +38,19 @@ if (!$user) {
 <h2>Profil de <?= $username; ?></h2>
 
 <p>Nom d'utilisateur : <?= $user['username']; ?></p>
-<p>Mes points : <?= $user['points']; ?> </p>
+<p><?php 
+    $utilisateurId = $_SESSION['id'];
+    $stmt2 = $conn->prepare("SELECT MAX(score) FROM parties WHERE utilisateur_id = :utilisateurId");
+    $stmt2->bindParam(':utilisateurId', $utilisateurId);
+    $stmt2->execute();
+    $result = $stmt2->fetch();
+    if ($result && isset($result[0])) {
+        $maxScore = $result[0];
+        echo "Mon meilleur score sur devine le perso Naruto : $maxScore";
+    } else {
+        echo "Vous n'avez jamais joué à devine le perso Naruto !";
+    }
+    ?>   </p>
 
 <a href="deconnexion.php">Déconnexion</a>
 <a href="index.php">Home</a>

@@ -51,7 +51,13 @@ if (!$user) {
     
 <a href="login.php">CONNEXION</a>
 
-<a href="jeu.php">JOUER AU JEU</a>
+<a href="jeu.php">JOUER AU JEU avec tous les persos</a>
+<p>Choisissez la difficulté si tu veux te tester:</p>
+<ul>
+  <li><a href="jeu.php?difficulty=easy">Facile</a></li>
+  <li><a href="jeu.php?difficulty=medium">Moyen</a></li>
+  <li><a href="jeu.php?difficulty=hard">Difficile</a></li>
+</ul>
 
 </body>
 </html>
