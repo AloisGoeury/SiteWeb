@@ -6,7 +6,7 @@ let persos = await reponse.json();
 
 
 const urlParams = new URLSearchParams(window.location.search);
-const difficulty = urlParams.get('difficulty');
+let difficulty = urlParams.get('difficulty');
 
 if (difficulty){
   if(difficulty === 'easy'){
@@ -17,7 +17,7 @@ if (difficulty){
     persos = persos.filter(item => item.difficulte === 'hard');
   }
 } else {
-  //difficulty = 'all';
+  difficulty = 'all';
 
 }
 
@@ -150,9 +150,9 @@ function verifierReponse() {
           }
         }
       };
-      if (difficulty !== 'easy' && difficulty !== 'medium' && difficulty !== 'hard'){
-        difficulty = 'all'
-      }
+      //if (difficulty !== 'easy' && difficulty !== 'medium' && difficulty !== 'hard'){
+       // difficulty = 'all'
+      //}
       xhr.send('score=' + point + '&difficulte=' + difficulty);
 
 
@@ -289,7 +289,8 @@ nextPersonButton.addEventListener('click', function() {
     resultPage.style.display = 'none';
     nextPersonButton.style.display = 'none'
     const scorePara = document.querySelector('.guesses');
-    scorePara.value = guesses.toString() + 'eme personnage'
+    const guess = guesses + 1
+    scorePara.textContent = guess.toString() + 'eme personnage'
   
 
     isAnswered = false;
