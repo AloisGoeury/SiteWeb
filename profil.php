@@ -40,20 +40,71 @@ if (!$user) {
 <p>Nom d'utilisateur : <?= $user['username']; ?></p>
 <p><?php 
     $utilisateurId = $_SESSION['id'];
-    $stmt2 = $conn->prepare("SELECT MAX(score) FROM parties WHERE utilisateur_id = :utilisateurId");
+    $stmt2 = $conn->prepare("SELECT MAX(score) FROM parties WHERE utilisateur_id = :utilisateurId AND difficulte = 'all'");
     $stmt2->bindParam(':utilisateurId', $utilisateurId);
     $stmt2->execute();
     $result = $stmt2->fetch();
     if ($result && isset($result[0])) {
         $maxScore = $result[0];
-        echo "Mon meilleur score sur devine le perso Naruto : $maxScore";
+        echo "Mon meilleur score sur devine le perso Naruto avec tous les persos: $maxScore";
     } else {
-        echo "Vous n'avez jamais joué à devine le perso Naruto !";
+        echo "Vous n'avez jamais joué à devine le perso Naruto avec tous les persos!";
     }
-    ?>   </p>
+    ?> 
+    <br>
+    <?php 
+    $utilisateurId = $_SESSION['id'];
+    $stmt2 = $conn->prepare("SELECT MAX(score) FROM parties WHERE utilisateur_id = :utilisateurId AND 'easy' = difficulte");
+    $stmt2->bindParam(':utilisateurId', $utilisateurId);
+    $stmt2->execute();
+    $result = $stmt2->fetch();
+    if ($result && isset($result[0])) {
+        $maxScore = $result[0];
+        echo "Mon meilleur score sur devine le perso Naruto mode easy : $maxScore";
+    } else {
+        echo "Vous n'avez jamais joué à devine le perso Naruto mode easy !";
+    }
+    ?>
+    <br>
+    <?php 
+    $utilisateurId = $_SESSION['id'];
+    $stmt2 = $conn->prepare("SELECT MAX(score) FROM parties WHERE utilisateur_id = :utilisateurId AND 'medium' = difficulte");
+    $stmt2->bindParam(':utilisateurId', $utilisateurId);
+    $stmt2->execute();
+    $result = $stmt2->fetch();
+    if ($result && isset($result[0])) {
+        $maxScore = $result[0];
+        echo "Mon meilleur score sur devine le perso Naruto mode medium: $maxScore";
+    } else {
+        echo "Vous n'avez jamais joué à devine le perso Naruto mode medium !";
+    }
+    ?> 
+    <br>
+    <?php 
+    $utilisateurId = $_SESSION['id'];
+    $stmt2 = $conn->prepare("SELECT MAX(score) FROM parties WHERE utilisateur_id = :utilisateurId AND 'hard' = difficulte");
+    $stmt2->bindParam(':utilisateurId', $utilisateurId);
+    $stmt2->execute();
+    $result = $stmt2->fetch();
+    if ($result && isset($result[0])) {
+        $maxScore = $result[0];
+        echo "Mon meilleur score sur devine le perso Naruto mode hard : $maxScore";
+    } else {
+        echo "Vous n'avez jamais joué à devine le perso Naruto mode hard !";
+    }
+    ?>
+
+
+
+    
+
+
+
+
+</p>
 
 <a href="deconnexion.php">Déconnexion</a>
-<a href="index.php">Home</a>
+<a href="accueil.php">Home</a>
 
 
 </body>

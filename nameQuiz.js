@@ -10,18 +10,51 @@ const difficulty = urlParams.get('difficulty');
 
 if (difficulty){
   if(difficulty === 'easy'){
-    persos = persos.filter(item => item.difficulte === 'easy')
+    persos = persos.filter(item => item.difficulte === 'easy');
   } else if(difficulty === 'medium'){
-    persos = persos.filter(item => item.difficulte === 'medium')
+    persos = persos.filter(item => item.difficulte === 'medium');
   }else if(difficulty === 'hard'){
-    persos = persos.filter(item => item.difficulte === 'hard')
+    persos = persos.filter(item => item.difficulte === 'hard');
   }
+} else {
+  //difficulty = 'all';
+
 }
 
 const Size = persos.length;
 console.log('Difficulté sélectionnée :', difficulty);
 
 let persoSelectionne = [];
+
+function compareNameAndLastName(answer, correct) {
+  const trimmedAnswer = answer.trim();
+  const parts = trimmedAnswer.split(' ');
+  const givenName = parts[0];
+  const givenLastName = parts[1];
+  const Correctparts = correct.split(' ');
+  const correctName = Correctparts[0];
+  const correctLastName = Correctparts[1];
+
+  if (parts.length === 1) {
+    if (givenName === correctName) {
+      return true;
+    } else {
+      console.log("Le nom n'est pas correct.");
+    }
+  } else if (givenName === correctName && givenLastName === correctLastName) {
+    console.log("Le nom et le prénom sont corrects.");
+  } else if (givenName === correctName) {
+    return true;
+  } else if (givenLastName === correctLastName) {
+    return true;
+  } else if (givenName === correctLastName) {
+    return true;
+  } else if (givenLastName === correctName) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 
 function generateImage(persos,Size){
@@ -78,12 +111,12 @@ function verifierReponse() {
   }
 
   const reponseDonnee = inputReponse.value;
-  if (reponseDonnee.toLowerCase() === GoodAnswer.toLowerCase()) {
+  if (reponseDonnee.toLowerCase().trim() === GoodAnswer.toLowerCase().trim()) {
     guesses += 1;
     if (essai === 0) {
-      point += 2;
+      point += 4;
     } else if (essai === 1) {
-      point += 1;
+      point += 2;
     }
     essai = 0;
     console.log(`Félicitations, vous avez maintenant ${point} points`);
@@ -117,7 +150,11 @@ function verifierReponse() {
           }
         }
       };
-      xhr.send('score=' + point);
+      if (difficulty !== 'easy' && difficulty !== 'medium' && difficulty !== 'hard'){
+        difficulty = 'all'
+      }
+      xhr.send('score=' + point + '&difficulte=' + difficulty);
+
 
       console.log(`Score final : ${point}`);
       const replay = confirm(`Score final : ${point}\nVous avez terminé le jeu ! Voulez-vous rejouer ?`);
@@ -131,9 +168,20 @@ function verifierReponse() {
         //perso = ListResult[1];
         location.reload();
       } else {
-        window.location.href = "index.php";
+        window.location.href = "accueil.php";
       }
     }
+  } else if(compareNameAndLastName(reponseDonnee.toLowerCase(),GoodAnswer.toLowerCase())){
+    if (essai === 0) {
+      point += 2;
+    } 
+      essai += 1;
+      const sectionReponse = document.querySelector(".Reponse");
+      const resultMessage = document.createElement("p");
+      sectionReponse.style.display = 'block';
+      resultMessage.textContent = `Faux! Ce n'est pas "${inputReponse.value}" ! Mais un élément est correct continuez`;
+      sectionReponse.appendChild(resultMessage);
+
   } else {
       essai += 1;
       const sectionReponse = document.querySelector(".Reponse");
@@ -197,7 +245,8 @@ BoutonTuTriches.addEventListener("click", function () {
         }
       }
     };
-    xhr.send('score=' + point);
+    xhr.send('score=' + point + '&difficulte=' + difficulty);
+
 
   
     console.log(`Score final : ${point}`);
@@ -205,11 +254,12 @@ BoutonTuTriches.addEventListener("click", function () {
     if (replay) {
       point = 0;
       guesses = 0;
-      ListResult = generateImage(persos, Size);
-      GoodAnswer = ListResult[0];
-      perso = ListResult[1];
+      //ListResult = generateImage(persos, Size);
+      //GoodAnswer = ListResult[0];
+      //perso = ListResult[1];
+      location.reload();
     } else {
-      window.location.href = "index.php";
+      window.location.href = "accueil.php";
     }
   }
 });
@@ -238,6 +288,8 @@ nextPersonButton.addEventListener('click', function() {
     const resultPage = document.querySelector('.Reponse'); 
     resultPage.style.display = 'none';
     nextPersonButton.style.display = 'none'
+    const scorePara = document.querySelector('.guesses');
+    scorePara.value = guesses.toString() + 'eme personnage'
   
 
     isAnswered = false;

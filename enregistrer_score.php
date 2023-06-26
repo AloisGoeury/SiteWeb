@@ -11,6 +11,7 @@ $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS
     
 
 $score = $_POST['score'];
+$difficulte = $_POST['difficulte'];
 $scoreInt = intval($score);
 var_dump($scoreInt);
 $datePartie = date('Y-m-d'); // Date actuelle
@@ -21,7 +22,7 @@ var_dump($datePartie);
 $utilisateurId = $_SESSION['id'];
 
 // Effectuez l'insertion du score dans la table "partie"
-$query = "INSERT INTO parties (utilisateur_id, date_partie, score) VALUES ('$utilisateurId', '$datePartie', '$score')";
+$query = "INSERT INTO parties (utilisateur_id, date_partie, score, difficulte) VALUES ('$utilisateurId', '$datePartie', '$score', '$difficulte')";
 
 // Exécutez la requête
 if ($conn->query($query) === TRUE) {

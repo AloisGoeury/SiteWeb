@@ -202,7 +202,7 @@
     {
         "nom": "Namiashi",
         "prenom": "Raido",
-        "Image": "Images/Raiso_Namiashi.jpg",
+        "Image": "Images/Raido_Namiashi.jpg",
         "difficulte" : "hard",
         "episodeDepart" : 1
     },
@@ -298,7 +298,7 @@
     {
         "nom": "Nohara",
         "prenom": "Rin",
-        "Image": "Images/Nohara_Rin.jpg",
+        "Image": "Images/Rin_Nohara.jpg",
         "difficulte" : "easy",
         "episodeDepart" : 119
     },
@@ -816,16 +816,16 @@
     },
 
     {
-        "nom": "",
-        "prenom": "Blue B",
+        "nom": "B",
+        "prenom": "Blue",
         "Image": "Images/Blue_B.jpg",
         "difficulte" : "hard",
         "episodeDepart" : 244
     },
 
     {
-        "nom": "",
-        "prenom": "Killer B",
+        "nom": "B",
+        "prenom": "Killer",
         "Image": "Images/Killer_B.jpg",
         "difficulte" : "easy",
         "episodeDepart" : 142
@@ -1783,8 +1783,8 @@
     },
 
     {
-        "nom": "",
-        "prenom": "Son Goku",
+        "nom": "Goku",
+        "prenom": "Son",
         "Image": "Images/Son_Goku.jpg",
         "difficulte" : "easy",
         "episodeDepart" : 165

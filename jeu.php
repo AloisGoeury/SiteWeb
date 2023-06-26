@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-
 		<meta charset="utf-8">
 		<title>Bon anniversaire</title>
 		<script type="module" src="nameQuiz.js" defer></script>
@@ -15,6 +14,8 @@
         <main>
             <section class="Score">
                 <p class="AffichageScore">Vous n'avez pas encore commencé</p>
+
+                <p class="guesses">1er personnage</p>
             </section>
             <section class="Image">
             </section>
@@ -29,6 +30,6 @@
                 <button class="showAnswer">Afficher la Solution</button>
 
             </section>
-            <a href="index.php">RETOURNER AU MENU</a>
+            <a href="accueil.php">RETOURNER AU MENU</a>
         </main>
     </body>

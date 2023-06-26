@@ -72,7 +72,7 @@ if (isset($_POST['submit'])) {
     <div>
         <input type="submit" name="submit" value="S'inscrire">
     </div>
-    <p>Déjà inscrit ? <a href="index.php">Se connecter</a></p>
+    <p>Déjà inscrit ? <a href="accueil.php">Se connecter</a></p>
 </form>
 
 </body>
