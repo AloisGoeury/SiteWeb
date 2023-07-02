@@ -71,17 +71,17 @@ function generateImage(persos,Size){
 
     const perso = persos[whichOne];
 
-    const sectionImage = document.querySelector(".Image");
+    const sectionImage = document.querySelector(".image");
 
-    const element = document.createElement("article");
+    //const element = document.createElement("article");
 
-    const image = document.createElement("img");
+    const image = document.querySelector(".image-jeu");
     image.src = perso.Image;
     console.log(image)
 
 
-    sectionImage.appendChild(element);
-    element.appendChild(image);
+    //sectionImage.appendChild(element);
+    //element.appendChild(image);
     let Answer = ''
 
 
@@ -99,10 +99,10 @@ function generateImage(persos,Size){
 } 
 
 function showTheAnswer(GoodResponse){
-    const sectionImage = document.querySelector(".Image");
-    const Reponse = document.createElement("p");
+    const sectionImage = document.querySelector(".image");
+    const Reponse = document.querySelector(".para-rep");
     Reponse.innerText = GoodResponse;
-    sectionImage.appendChild(Reponse);
+    //sectionImage.appendChild(Reponse);
 }
 
 function verifierReponse() {
@@ -168,7 +168,7 @@ function verifierReponse() {
         //perso = ListResult[1];
         location.reload();
       } else {
-        window.location.href = "accueil.php";
+        window.location.href = "accueil_jeu.php";
       }
     }
   } else if(compareNameAndLastName(reponseDonnee.toLowerCase(),GoodAnswer.toLowerCase())){
@@ -259,7 +259,7 @@ BoutonTuTriches.addEventListener("click", function () {
       //perso = ListResult[1];
       location.reload();
     } else {
-      window.location.href = "accueil.php";
+      window.location.href = "accueil_jeu.php";
     }
   }
 });
@@ -299,7 +299,7 @@ nextPersonButton.addEventListener('click', function() {
     BoutonTuTriches.style.display = 'block';
     inputReponse.value = '';
     document.querySelector(".Reponse").innerHTML = "";
-    document.querySelector(".Image").innerHTML = "";
+    document.querySelector(".image-jeu").removeAttribute("src");
     inputReponse.focus()
   
     ListResult = generateImage(persos, Size);

@@ -18,7 +18,9 @@
 
                 <p class="guesses">1er personnage</p>
             </section>
-            <section class="Image">
+            <section class="image">
+                <img class="image-jeu">
+                <p class="para-rep"></p>
             </section>
             <div class="Reponse"></div>
             <button class="nextPersonButton">Suivant</button>
