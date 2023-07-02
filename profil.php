@@ -32,6 +32,7 @@ if (!$user) {
 <html>
 <head>
     <title>Profil de <?= $username; ?></title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 

@@ -6,6 +6,7 @@
 		<meta charset="utf-8">
 		<title>Bon anniversaire</title>
 		<script type="module" src="nameQuiz.js" defer></script>
+        <link rel="stylesheet" href="styles.css">
 	</head>
     <body>
         <header>
@@ -30,6 +31,6 @@
                 <button class="showAnswer">Afficher la Solution</button>
 
             </section>
-            <a href="accueil.php">RETOURNER AU MENU</a>
+            <a href="accueil_jeu.php">RETOURNER AU MENU</a>
         </main>
     </body>

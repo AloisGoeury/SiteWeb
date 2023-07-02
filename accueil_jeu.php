@@ -23,11 +23,10 @@ if (!$user) {
 }
 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ACCUEIL</title>
+    <title>ACCUEIL Jeu</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -36,18 +35,32 @@ if (!$user) {
     Bonjour 
     <?php 
     echo "$username. ";
+    $utilisateurId = $_SESSION['id'];
+    $stmt2 = $conn->prepare("SELECT MAX(score) FROM parties WHERE utilisateur_id = :utilisateurId");
+    $stmt2->bindParam(':utilisateurId', $utilisateurId);
+    $stmt2->execute();
+    $result = $stmt2->fetch();
+    if ($result && isset($result[0])) {
+        $maxScore = $result[0];
+        echo "Votre meilleur score est : $maxScore";
+    } else {
+        echo "Aucun score trouvé ! Vous êtes nouveau ? Jouez !";
+    }
     ?>    
-     Que veux tu faire aujourd'hui ?
 </h1>
 
-    
+<p>
 <a href="login.php">Profil</a>
+<a href="accueil.php">Retour à l'accueil</a>
+</p>
 
 
-<p>Que fait-on ?</p>
+<p>Choisissez la difficulté si tu veux te tester:</p>
 <ul>
-  <li><a href="accueil_jeu.php">JOUE À UN JEU</a></li>
-  <li><a href="bibliotheque.php">OUVRE TA BIBLIOTHÈQUE</a></li>
+  <li><a href="jeu.php">JOUER AU JEU avec tous les persos</a></li>
+  <li><a href="jeu.php?difficulty=easy">Facile</a></li>
+  <li><a href="jeu.php?difficulty=medium">Moyen</a></li>
+  <li><a href="jeu.php?difficulty=hard">Difficile</a></li>
 </ul>
 
 </body>

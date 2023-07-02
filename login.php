@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
         // Authentification réussie, créer une session
         $_SESSION['username'] = $username;
         $_SESSION['id'] = $userID;
-        header("Location: profil.php");
+        header("Location: accueil.php");
         exit();
     } else {
         $errorMessage = "Identifiants de connexion incorrects.";
@@ -44,6 +44,7 @@ if (isset($_POST['submit'])) {
 <html>
 <head>
     <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 

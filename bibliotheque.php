@@ -27,28 +27,32 @@ if (!$user) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ACCUEIL</title>
+    <title>Ma Bibliothèque</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <h1>
-    Bonjour 
+    Nous sommes dans ta bibliothèque 
     <?php 
-    echo "$username. ";
+    echo "$username ! ";
     ?>    
      Que veux tu faire aujourd'hui ?
 </h1>
 
-    
+
+
+<p>
 <a href="login.php">Profil</a>
+<a href="accueil.php">Retour à l'accueil</a>
+</p>
 
-
-<p>Que fait-on ?</p>
 <ul>
-  <li><a href="accueil_jeu.php">JOUE À UN JEU</a></li>
-  <li><a href="bibliotheque.php">OUVRE TA BIBLIOTHÈQUE</a></li>
+  <li><a href="biblioViz.php">Visualiser ma bibliothèque</a></li>
+  <li><a href="biblioGere.php">Gérer ma bibliothèque</a></li>
+  <li><a href="stats.php">Statistiques</a></li>
 </ul>
+
 
 </body>
 </html>
