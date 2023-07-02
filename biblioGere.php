@@ -21,6 +21,9 @@
                 </ul>
                 Désolé c'est beaucoup de boulot je pensais avoir plus de temps et mes ambitions sont un peu grande...
             </p>
+            <input type="text" id="searchInput" placeholder="Rechercher un livre...">
+            <ul id="resultsList"></ul>
+            
         </main>
     </body>
 </html>
