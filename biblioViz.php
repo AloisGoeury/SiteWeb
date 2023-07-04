@@ -8,12 +8,8 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <head>
-            <p>
-                <a href="login.php">Profil</a>
-                <a href="bibliotheque.php">Retour à la bibliotèque</a>
-             </p>
-        </head>
+    <?php include './header_logged.php' ?>
+
         <main>
             <p>Nous sommes en travaux ! Tu pourras bientôt :
                 <ul>

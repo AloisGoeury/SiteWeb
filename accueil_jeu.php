@@ -30,6 +30,7 @@ if (!$user) {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <?php include './header_logged.php' ?>
 
 <h1>
     Bonjour 

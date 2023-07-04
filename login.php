@@ -49,6 +49,7 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<?php include './header.php' ?>
 
 <h2>Connexion</h2>
 

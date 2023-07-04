@@ -34,6 +34,7 @@ if (!$user) {
 </head>
 <body>
 
+<?php include './header_logged.php' ?>
 <h1>
     Nous sommes dans ta bibliothèque 
     <?php 

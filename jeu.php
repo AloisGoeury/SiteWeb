@@ -1,4 +1,3 @@
-<?php?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -10,10 +9,11 @@
         <link rel="stylesheet" href="styles.css">
 	</head>
     <body>
-        <header>
+    <?php include './header_logged.php' ?>
+
+       
+            <main>
             <h1>Devine le nom de ce personnage</h1>
-        </header>
-        <main>
             <section class="Score">
                 <p class="AffichageScore">Vous n'avez pas encore commencé</p>
 
