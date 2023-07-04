@@ -4,7 +4,7 @@
 
 // Vérifier si l'utilisateur est déjà connecté
 if (isset($_SESSION['username'])) {
-    header("Location: profil.php");
+    header("Location: accueil.php");
     exit();
 }
 
@@ -43,6 +43,8 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>

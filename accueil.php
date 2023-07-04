@@ -1,13 +1,13 @@
-<?php 
-    require_once 'config.php';
-    session_start();
+<?php
+require_once 'config.php';
+session_start();
 
 $username = $_SESSION['username'];
 
 
 // Connexion à la base de données
 $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // Requête pour obtenir les informations de l'utilisateur
 $stmt = $conn->prepare("SELECT * FROM utilisateurs WHERE username = :username");
@@ -26,29 +26,37 @@ if (!$user) {
 
 <!DOCTYPE html>
 <html>
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include './fonts.php' ?>
     <title>ACCUEIL</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<h1>
-    Bonjour 
-    <?php 
-    echo "$username. ";
-    ?>    
-     Que veux tu faire aujourd'hui ?
-</h1>
+    <?php include './header_logged.php' ?>
 
-    
-<a href="login.php">Profil</a>
+    <main>
+        <h1>
+            Bonjour
+            <?php
+            echo "$username. ";
+            ?>
+            Que veux tu faire aujourd'hui ?
+        </h1>
+
+        <p>Que fait-on ?</p>
+        
+        <button class="btn"><a href="accueil_jeu.php">JOUE À UN JEU</a></button>
+        <button class="btn"><a href="bibliotheque.php">OUVRE TA BIBLIOTHÈQUE</a></button>
+
+    </main>
 
 
-<p>Que fait-on ?</p>
-<ul>
-  <li><a href="accueil_jeu.php">JOUE À UN JEU</a></li>
-  <li><a href="bibliotheque.php">OUVRE TA BIBLIOTHÈQUE</a></li>
-</ul>
 
 </body>
+
 </html>

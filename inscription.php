@@ -2,10 +2,10 @@
 require_once 'config.php';
 // Vérifier si l'utilisateur est déjà connecté
 session_start();
-if (isset($_SESSION['username'])) {
-    header("Location: profil.php");
-    exit();
-}
+// if (isset($_SESSION['username'])) {
+//     header("Location: accueil.php");
+//     exit();
+// }
 
 // Vérifier si le formulaire d'inscription est soumis
 if (isset($_POST['submit'])) {
@@ -52,6 +52,8 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'Inscription</title>
     <link rel="stylesheet" href="styles.css">
 </head>

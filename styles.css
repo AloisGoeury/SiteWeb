@@ -1,3 +1,11 @@
+
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+  
+
 #myCanvas {
     border: 1px solid #000;
     background-color: #fff;
@@ -10,4 +18,77 @@ a:visited {
 .image-jeu{
   width: 30%;
   height: 30%;
+}
+
+/* -- NAV -- */
+
+header,main {
+  max-width: 1600px;
+  margin-inline: auto;
+}
+
+.main-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+}
+.main-nav .main-nav_content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.login-list{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.login-list .list-item{
+
+}
+.login-list .list-item a {
+  position: relative;
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+
+}
+.login-list .list-item a:hover{
+  color: black;
+}
+.login-list .list-item a::after{
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  transition: all .3s ease-out;
+}
+.login-list .list-item a:hover::after{
+  width: 100%;
+}
+
+
+/* BTN */
+.btn{
+  border: none;
+  background-color: #DC7F90;
+  border-radius: 99px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+.btn a{
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
 }
