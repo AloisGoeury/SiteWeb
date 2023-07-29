@@ -50,11 +50,9 @@ if (!$user) {
 <a href="accueil.php">Retour à l'accueil</a>
 </p>
 
-<ul>
-  <li><a href="biblioViz.php">Visualiser ma bibliothèque</a></li>
-  <li><a href="biblioGere.php">Gérer ma bibliothèque</a></li>
-  <li><a href="stats.php">Statistiques</a></li>
-</ul>
+<button class="btn"><a href="biblioViz.php">Visualiser ma bibliothèque</a></button>
+<button class="btn"><a href="biblioGere.php">Gérer ma bibliothèque</a></button>
+<button class="btn"><a href="stats.php">Statistiques</a></button>
 
 
 </body>

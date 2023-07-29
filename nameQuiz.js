@@ -148,11 +148,8 @@ function verifierReponse() {
           } else {
             console.error('Une erreur s\'est produite lors de l\'envoi du score.');
           }
-        }
+        } 
       };
-      //if (difficulty !== 'easy' && difficulty !== 'medium' && difficulty !== 'hard'){
-       // difficulty = 'all'
-      //}
       xhr.send('score=' + point + '&difficulte=' + difficulty);
 
 
@@ -161,11 +158,6 @@ function verifierReponse() {
       if (replay) {
         point = 0;
         guesses = 0;
-        //document.querySelector(".Reponse").innerHTML = "";
-        //document.querySelector(".Image").innerHTML = "";
-        //ListResult = generateImage(persos, Size);
-        //GoodAnswer = ListResult[0];
-        //perso = ListResult[1];
         location.reload();
       } else {
         window.location.href = "accueil_jeu.php";
@@ -254,9 +246,6 @@ BoutonTuTriches.addEventListener("click", function () {
     if (replay) {
       point = 0;
       guesses = 0;
-      //ListResult = generateImage(persos, Size);
-      //GoodAnswer = ListResult[0];
-      //perso = ListResult[1];
       location.reload();
     } else {
       window.location.href = "accueil_jeu.php";

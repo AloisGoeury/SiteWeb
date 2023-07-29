@@ -43,6 +43,51 @@ if (isset($_POST['submit'])) {
         $stmt->bindParam(':password', $hashedPassword);
         $stmt->execute();
 
+        $defaultLibrary = '{"biblio":[[[430,430],[525,430]],[[300,525],[200,525],[440,525]]],"widthMath":15}';
+        $data = json_decode($defaultLibrary, true);
+        $folderPath = "./libraryFolder"; 
+        $fileName = "libraryData_" . time() . ".json";
+        if (!file_exists($folderPath)) {
+            mkdir($folderPath, 0777, true); // Vous pouvez ajuster les droits d'accès (0777) selon vos besoins
+        }
+        $filePath = $folderPath . "/" . $fileName;
+        if (file_put_contents($filePath, json_encode($data))) { // Fait ici l'enregistrement
+            $userQuery = "SELECT id as id  FROM utilisateurs WHERE username=:username";
+            $stmt = $conn->prepare($userQuery);
+            $stmt->bindParam(':username', $username);
+            $stmt->execute();
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            $utilisateurId = $result['id'];
+
+            // Obtenir le nombre de bibliothèques déjà enregistrées pour cet utilisateur
+            $selectQuery = "SELECT COUNT(nom_bibliotheque) as count FROM bibliotheque WHERE id_utilisateur=:utilisateurId";
+            $stmt = $conn->prepare($selectQuery);
+            $stmt->bindParam(':utilisateurId', $utilisateurId);
+            $stmt->execute();
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            $count = $result['count'];
+
+            // Générer le nom de la bibliothèque
+            $nom_bibliotheque = "biblioteque($count)";
+
+            // Insérer le chemin du fichier JSON dans la table bibliotheque
+            $query = "INSERT INTO bibliotheque (id_utilisateur, nom_bibliotheque, chemin_json) VALUES (:utilisateurId, :nom_bibliotheque, :filePath)";
+            $stmt = $conn->prepare($query);
+            $stmt->bindParam(':utilisateurId', $utilisateurId);
+            $stmt->bindParam(':nom_bibliotheque', $nom_bibliotheque);
+            $stmt->bindParam(':filePath', $filePath);
+            if ($stmt->execute()) {
+                var_dump('Le score a été enregistré avec succès dans la table bibliotheque.');
+            } else {
+                var_dump('Une erreur s\'est produite lors de l\'enregistrement du score : ' . $conn->error);
+            }
+        
+        
+        } else {
+            // Erreur lors de l'enregistrement du fichier
+            echo json_encode(["message" => "Erreur lors de l'enregistrement du fichier JSON sur le serveur."]);
+        }
+
         header("Location: login.php");
         exit();
     }

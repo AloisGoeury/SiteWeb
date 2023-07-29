@@ -1,10 +1,38 @@
+<?php
+require_once 'config.php';
+session_start();
+
+$username = $_SESSION['username'];
+
+
+// Connexion à la base de données
+$conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+// Requête pour obtenir les informations de l'utilisateur
+$stmt = $conn->prepare("SELECT * FROM utilisateurs WHERE username = :username");
+$stmt->bindParam(':username', $username);
+$stmt->execute();
+$user = $stmt->fetch();
+
+
+// Vérifier si l'utilisateur existe dans la base de données
+if (!$user) {
+    echo "Utilisateur introuvable.";
+    exit();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vizualise ta Bibliotheque</title>
-        <script type="module" src="dessin.js" defer></script>
+        <script type="module" src="closeModal.js" defer></script>
+        <script type="module" src="bibliotheque.js" defer></script>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -20,8 +48,21 @@
                 Désolé c'est beaucoup de boulot je pensais avoir plus de temps et mes ambitions sont un peu grande...
             </p>
             <div>
-                <p>Test de dessin
-                    <canvas id="myCanvas"></canvas>
+                <p>Test de bibliotheque
+                <div>
+                    <p>Représentation de la bibliothèque :</p>
+                    <div id="bibliotheque">
+                        <button id="generateBooksButton">Générer les livres</button>
+                        <canvas id="myCanvas"></canvas>
+                    </div>
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p id="bookInfo">Informations du livre : </p>
+                        </div>
+                    </div>
+                    <button class="btn"><a href="createBibliotheque.php">Créer une bibliothèque</a></button>
+                </div>
                 </p>
             </div>
         </main>
