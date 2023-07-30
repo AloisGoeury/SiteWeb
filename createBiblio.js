@@ -166,7 +166,7 @@ updateLibraryDimensions();
 let saveButton = document.getElementById("save-button");
 saveButton.addEventListener("click",function(event){
     const { biblio, widthMat } = updateLibraryDimensions();
-    const biblioJson = {"biblio":biblio,"widthMath":widthMat};
+    const biblioJson = {"biblio":biblio,"widthMat":widthMat};
     const xhr = new XMLHttpRequest();
       xhr.open('POST', 'saveLibraryData.php');
       xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');

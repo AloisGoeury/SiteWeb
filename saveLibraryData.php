@@ -14,7 +14,6 @@ $biblio = $_POST['biblio'];
 $data = json_decode($biblio, true);
 
 
-
 // Étape 2 : Enregistrer le fichier JSON dans un dossier sur le serveur
 $folderPath = "./libraryFolder"; 
 $fileName = "libraryData_" . time() . ".json"; // Créez un nom de fichier unique (en utilisant le timestamp) pour éviter les conflits de noms
