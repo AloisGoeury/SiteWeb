@@ -1,8 +1,3 @@
-// Il me faut la longueur, la Hauteur, L'épaisseur du matériau, 
-// Le nombre de rangé et ensuite le nombre de séparation
-// Pourquoi ne pas faire une barre que l'on bouge et on voit 
-// en meme temps ou ca se place
-
 const canvas = document.getElementById("canvas-create-bibli");
 const context = canvas.getContext("2d");
 

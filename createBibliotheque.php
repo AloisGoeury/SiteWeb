@@ -14,6 +14,9 @@
                 <h1>Vous voulez créer une nouvelle bibliothèque !</h1>
             </div>
             <div>
+                <button class="btn"><a href="biblioViz.php">Retourner à la visualisation</a></button>
+            </div>
+            <div>
                 <label>Longueur : <span id="longueurOutput">1000</span> mm</label>
                 <input type="range" min="50" max="2500" value="1000" id="longueurRange">
             </div>

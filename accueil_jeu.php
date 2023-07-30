@@ -51,7 +51,7 @@ if (!$user) {
 </h1>
 
 <p>
-<a href="login.php">Profil</a>
+<a href="profil.php">Profil</a>
 <a href="accueil.php">Retour à l'accueil</a>
 </p>
 

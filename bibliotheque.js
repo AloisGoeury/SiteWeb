@@ -1,43 +1,43 @@
-// La bibliotheque sera d'abord pas modifiable. ce sera un carré de 1m de coté avec 5 cases
-// 2 en haut et 3 en bas et avec des hauteurs différentes
-// Ce sera représenté par une matrice de cette forme 
-// (On inclue un materiaux de 15mm d'épaisseur)
-// Attention aux diférentes hauteur qui pour l'instant peuvent poser probleme donc on oublie dans un premier temps
 import { closeModal } from './closeModal.js';
 
-// let biblio = [
-//     [[430,430],[525,430]], // [[lenght,height]]
-//     [[300,525],[200,525],[440,525]]
-// ];
+function generateColor(){
+    let color = [];
+    for (let i = 0; i<3;i++){
+        const randomValue = Math.floor(Math.random() * 256);
+        color.push(randomValue)
+    }
+    return color
+}
+
+function getRandomElement(list) {
+    const randomIndex = Math.floor(Math.random() * list.length);
+    const randomElement = list[randomIndex];
+    return randomElement;
+  }
+
+function generateBook(){
+    const possibleWidth = [15,16,17,18,19,20,21,22,23,24,25];
+    const possibleHeight = [150,155,160,165,170,175,180];
+    const heigth = getRandomElement(possibleHeight);
+    const width = getRandomElement(possibleWidth);
+    const color = generateColor();
+    const book = [width,heigth,color];
+    return book;
+}
+
+function generateLibrary(howManyBooks){
+    let bookBiblio = [];
+    for (let i =0;i<howManyBooks;i++){
+        const book = generateBook();
+        bookBiblio.push(book);
+    }
+    return bookBiblio;
+}
+
+// const howManyBooks = 20;
+// const bookBiblio = generateLibrary(howManyBooks);
 
 
-// let widthMat = 15;
-
-let bookFirst = [23,144,[122, 35, 194]];
-let bookSecond = [44,112,[35, 194, 59]];
-let bookThird = [120,440,[224, 18, 35]];
-let bookFourth = [320,440,[18, 214, 224]];
-let bookFifth = [170,500,[97, 96, 76]]
-let bookSixth = [620,440,[9, 68, 71]];
-let bookSeventh = [510,30,[237, 230, 19]];
-let bookHeigth = [170,480,[209, 208, 190]];
-let bookNineth = [170,440,[61, 245, 5]];
-let bookTenth = [360,400,[245, 5, 221]];
-let bookEleventh = [23,144,[122, 35, 194]];
-
-let bookBiblio = [];
-
-bookBiblio.push(bookFirst);
-bookBiblio.push(bookSecond);
-bookBiblio.push(bookThird);
-bookBiblio.push(bookFourth);
-bookBiblio.push(bookFifth);
-bookBiblio.push(bookSixth);
-bookBiblio.push(bookSeventh);
-bookBiblio.push(bookHeigth);
-bookBiblio.push(bookNineth);
-bookBiblio.push(bookTenth);
-bookBiblio.push(bookEleventh);
 
 function wichCase(biblioFilled,book,biblio){
     let caseBiblio = [];
@@ -117,8 +117,8 @@ function handleCanvasClick(event, biblioFilled, biblio, widthMat, canvas) {
       for (let j = 0; j < biblioFilled[i].length; j++) {
         for (let k = 0; k < biblioFilled[i][j].length; k++) {
           const book = biblioFilled[i][j][k][0];
-          const bookX = biblioFilled[i][j][k][1] * 0.5; // Remplacez par la propriété y du livre (coordonnée y du coin supérieur gauche)
-          const bookY = biblioFilled[i][j][k][2] * 0.5; // Remplacez par la propriété y du livre (coordonnée y du coin supérieur gauche)
+          const bookX = biblioFilled[i][j][k][1] * 0.5; 
+          const bookY = biblioFilled[i][j][k][2] * 0.5;
           const bookWidth = book[0] * 0.5;
           const bookHeight = book[1] * 0.5; 
   
@@ -136,57 +136,32 @@ function handleCanvasClick(event, biblioFilled, biblio, widthMat, canvas) {
     }
   }
   
-//   function loadJSONFile(filePath) {
-//     fetch(filePath)
-//   .then(response => response.json())
-//   .then(data => {
-//     // Le contenu du fichier JSON est maintenant disponible dans la variable "data"
-//     console.log("Contenu du fichier JSON :", data);
-
-//     // Vous pouvez accéder aux éléments spécifiques du fichier JSON
-//     const biblio = data.biblio;
-//     const widthMat = data.widthMath;
-
-//     console.log("Contenu de biblio :", biblio);
-//     console.log("Contenu de widthMat :", widthMat);
-//     const jsonNew = {"biblio":biblio,"widthMat":widthMat}
-//     console.log(jsonNew)
-//     return jsonNew
-//     // Vous pouvez maintenant utiliser les données comme vous le souhaitez
-//     // Par exemple, vous pouvez appeler une fonction pour traiter les données
-//     // processJsonData(biblio, widthMat);
-//   })
-//   .catch(error => {
-//     console.error("Erreur lors de la récupération du fichier JSON :", error);
-//     // Gérez les erreurs ici
-//   });
-//   }
-
-// function getLibrary() {
-//     fetch("getLibrary.php")
-//     .then(response => response.json())
-//     .then(data => {
-//         // Le contenu du fichier JSON est maintenant disponible dans la variable "data"
-//         console.log("Contenu du fichier JSON :", data);
-
-//         // Vous pouvez accéder aux valeurs spécifiques du fichier JSON
-//         console.log("Chemin du fichier JSON :", data.json_path);
-
-//         let jsonNew = loadJSONFile(data.json_path);
-//         console.log(jsonNew)
-//         return jsonNew
-//     })
-//     .catch(error => {
-//         console.error("Erreur lors de la récupération du fichier JSON :", error);
-//         // Gérez les erreurs ici
-//     });
-// }
-
-// const jsonNew = getLibrary();
-// const biblio = jsonNew["biblio"];
-// const widthMat = jsonNew["widthMat"];
+async function getBooks() {
+    try {
+      const response = await fetch("get_books.php");
+      const data = await response.json();
+      console.log(data);
+    
+      const books = data.jsonBooks;
+      let bookBiblio = [];
+  
+      for (let i = 0; i<books.length;i++){
+          let book = [];
+          book.push(parseInt(books[i].epaisseur_livre));
+          book.push(parseInt(books[i].hauteur_livre));
+          book.push(JSON.parse(books[i].couleur_tranche));
+          bookBiblio.push(book);
+          console.log(book)
+      }
+      return bookBiblio;
+    } catch (error) {
+      console.error("Erreur lors de la récupération du fichier JSON :", error);
+      throw error;
+    }
+  }
 
 function start(biblio,widthMat) {
+    console.log(biblio)
     let canvas = document.getElementById("myCanvas");
     let context = canvas.getContext("2d");
 
@@ -221,26 +196,52 @@ function start(biblio,widthMat) {
             context.strokeRect(x, y, biblio[i][j][0], biblio[i][j][1]);
             context.fillStyle = `rgba(110, 74, 9, 1)`
             context.fillRect(x,y,biblio[i][j][0],biblio[i][j][1])
-            console.log(`x ${x}, y ${y}, biblio width ${biblio[i][j][0]}, biblio heigth ${biblio[i][j][1]}`);
+            //console.log(`x ${x}, y ${y}, biblio width ${biblio[i][j][0]}, biblio heigth ${biblio[i][j][1]}`);
         }
     }
 
     let generateButton = document.getElementById("generateBooksButton");
     let biblioFilled = [];
     generateButton.addEventListener("click", function(){
-        biblioFilled = generateBooks(biblio,bookBiblio,context,widthMat)
-    let compt = 0;
-    for (let i = 0; i<biblioFilled.length;i++){
-        for (let j = 0; j < biblioFilled[i].length;j++){
-            for (let k = 0; k < biblioFilled[i][j].length;k++){
-                console.log(`Le livre ${compt} est à la entre ${biblioFilled[i][j][k][1]} et ${biblioFilled[i][j][k][0][0]+biblioFilled[i][j][k][1]} en x et entre ${biblioFilled[i][j][k][2]} et ${biblioFilled[i][j][k][0][1]+biblioFilled[i][j][k][2]} en y`)
-                compt++
+        // const bookBiblio = getBooks();
+    
+        fetch("get_books.php")
+        .then((response) => response.json())
+        .then((data) => {
+        // Process the retrieved JSON data
+        console.log(data);
+        
+        const books = data.jsonBooks;
+        let bookBiblio = [];
+
+        for (let i = 0; i<books.length;i++){
+            let book = [];
+            book.push(parseInt(books[i].epaisseur_livre));
+            book.push(parseInt(books[i].hauteur_livre));
+            book.push(JSON.parse(books[i].couleur_tranche));
+            bookBiblio.push(book);
+            console.log(book)
+        }
+        // For example, you can pass the data to your "generateBooks" function
+        biblioFilled = generateBooks(biblio, bookBiblio, context, widthMat);
+
+        let compt = 0;
+        for (let i = 0; i < biblioFilled.length; i++) {
+            for (let j = 0; j < biblioFilled[i].length; j++) {
+            for (let k = 0; k < biblioFilled[i][j].length; k++) {
+                compt++;
+            }
             }
         }
-    }
-    canvas.addEventListener('click', function(event) {
-        handleCanvasClick(event, biblioFilled, biblio, widthMat, canvas);
+        canvas.addEventListener('click', function(event) {
+            handleCanvasClick(event, biblioFilled, biblio, widthMat, canvas);
+            });
+        })
+        .catch((error) => {
+        console.error("Error fetching JSON data:", error);
+        // Handle errors here
         });
+
     });
 }
 
@@ -283,7 +284,7 @@ window.addEventListener('click', function(event) {
     try {
       const jsonNew = await getLibrary();
       const biblio = jsonNew.biblio;
-      const widthMat = parseInt(jsonNew.widthMath);
+      const widthMat = parseInt(jsonNew.widthMat);
   
       console.log("Contenu de biblio :", biblio);
       console.log("Contenu de widthMat :", widthMat);
@@ -296,5 +297,3 @@ window.addEventListener('click', function(event) {
       // Gérez les erreurs ici
     }
   })();
-  
-

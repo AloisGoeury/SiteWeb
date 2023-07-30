@@ -19,7 +19,10 @@
             </p>
             <input type="text" id="searchInput" placeholder="Rechercher un livre...">
             <ul id="resultsList"></ul>
-            
+            <div>
+                <button class="btn"><a href="add_book.php">Ajouter un Nouveau Livre</a></button>
+                <button class="btn"><a href="biblioViz.php">Gerer la collection</a></button>
+            </div>
         </main>
     </body>
 </html>

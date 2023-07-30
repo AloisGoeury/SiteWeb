@@ -48,7 +48,8 @@ if (!$user) {
                 Désolé c'est beaucoup de boulot je pensais avoir plus de temps et mes ambitions sont un peu grande...
             </p>
             <div>
-                <p>Test de bibliotheque
+                <h3>Attention, il y a un bug quand on clique nous ne sommes pas forcement sur le bon livre ce sera corrigé prochainement</h3>
+                <p>
                 <div>
                     <p>Représentation de la bibliothèque :</p>
                     <div id="bibliotheque">

@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) {
         $stmt->bindParam(':password', $hashedPassword);
         $stmt->execute();
 
-        $defaultLibrary = '{"biblio":[[[430,430],[525,430]],[[300,525],[200,525],[440,525]]],"widthMath":15}';
+        $defaultLibrary = '{"biblio":[[[430,430],[525,430]],[[300,525],[200,525],[440,525]]],"widthMat":15}';
         $data = json_decode($defaultLibrary, true);
         $folderPath = "./libraryFolder"; 
         $fileName = "libraryData_" . time() . ".json";
